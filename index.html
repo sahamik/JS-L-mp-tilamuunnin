@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lämpötilamuunnin</title>
+</head>
+<body>
+
+    <h1>Lämpötilamuunnin</h1>
+
+    <section id="asteikko">
+        <select id="asteikkoValitsin">
+            <option value="celcius-fahrenheit">Celcius --> Fahrenheit</option>
+            <option value="fahrenheit-celcius">Fahrenheit --> Celcius</option>
+        </select>
+    </section>
+
+    <section id="muunnin">
+        <p>Syötä lämpötila:
+            <form id="lampotila">
+                <input type="text" id="lampotilaInput">
+                <button id="btnMuunna">Muunna</button>
+            </form>
+            <form id="decimals">
+                <input type="checkbox" id="checkBox1">
+                <label for="decimal1"> 1 desimaali</label><br>
+                <input type="checkbox" id="checkBox2">
+                <label for="decimal2"> 2 desimaali</label><br>
+                <input type="checkbox" id="checkBox3">
+                <label for="decimal3"> 3 desimaali</label><br>
+            </form>
+        </p>
+    </section>
+
+    <section id="tulos">
+        <p id="vastaus"></p>
+    </section>
+    
+</body>
+
+    <script src="main.js"></script>
+
+</html>
